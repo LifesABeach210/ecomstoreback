@@ -25,7 +25,7 @@ const createUser = async (username,passwordHash)=>{
 
 router.post('/create-user', async function(req,res,next){
 try{
-    const username = req.body.username;
+    const username = req.body.email;
     const password = req.body.password;
     const saltRounds = 5;
     const salt = await bcrypt.genSalt(saltRounds);
