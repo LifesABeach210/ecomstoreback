@@ -15,7 +15,7 @@ app.options("*", cors());
 
 var { mongoConnect } = require("./mongo.js");
 mongoConnect();
-console.log('hello')
+
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
